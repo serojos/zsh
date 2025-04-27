@@ -1,5 +1,5 @@
 # zsh
-Содержит oh-my-zsh, плагин zsh-syntax-highlighting и сконфигурированную тему powerlevel10k
+Содержит **oh-my-zsh**, плагин **zsh-syntax-highlighting** и сконфигурированную тему **powerlevel10k**
 
 
 ## Источник (оригинал): 
