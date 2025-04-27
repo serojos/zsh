@@ -3,15 +3,15 @@
 
 
 ## Источник (оригинал): 
-https://github.com/ohmyzsh/ohmyzsh.git
-https://github.com/zsh-users/zsh-syntax-highlighting.git
+https://github.com/ohmyzsh/ohmyzsh.git\
+https://github.com/zsh-users/zsh-syntax-highlighting.git\
 https://github.com/romkatv/powerlevel10k.git
 
 
 ## Установка
-cd /usr/bin ; clone git@github.com:serojos/zsh.git .oh-my-zsh 
-cp /usr/bin/.oh-my-zsh/.zshrc ~/.zshrc
-nano ~/.rc
+cd /usr/bin ; clone git@github.com:serojos/zsh.git .oh-my-zsh\
+cp /usr/bin/.oh-my-zsh/.zshrc ~/.zshrc\
+nano ~/.rc\
 exec zsh
 
 
