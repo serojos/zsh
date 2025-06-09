@@ -32,7 +32,7 @@ cp ~/.zshrc $ZSH/.zshrc
 cat ~/.p10k.zsh >$ZSH/themes/powerlevel10k/zshrc-p10k.zsh  
 
 git init  
-git remote add origin git@github.com:serojos/zsh.git  
+git remote add origin git@github.com:serojos2/zsh.git  
 git add .  
 git commit -m "Init Commit"  
 git push origin HEAD  
