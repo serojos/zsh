@@ -9,8 +9,10 @@ https://github.com/romkatv/powerlevel10k.git
 
 
 ## Установка
-clone git@github.com:serojos2/zsh.git /usr/bin/.oh-my-zsh  
-cp /usr/bin/.oh-my-zsh/.zshrc ~/.zshrc  
+apt install -y zsh
+sed 's/[^:]*$/\/usr\/bin\/zsh/' -i /etc/passwd
+git clone git@github.com:serojos2/zsh.git /opt/oh-my-zsh
+cp /opt/oh-my-zsh/.zshrc ~/.zshrc  
 nano ~/.rc  
 exec zsh  
 
