@@ -14,9 +14,9 @@ apt install -y zsh
 sed 's/[^:]*$/\/usr\/bin\/zsh/' -i /etc/passwd  
 git clone git@github.com:serojos2/zsh.git /opt/oh-my-zsh  
 cp /opt/oh-my-zsh/.zshrc ~/.zshrc  
-nano ~/.rc 
+nano ~/.rc  
+exec zsh 
 ```
-`exec zsh`  
 
 
 ## Initial Setup
