@@ -11,7 +11,7 @@ https://github.com/romkatv/powerlevel10k.git
 ```
 apt install -y zsh  
 sed '/^root:/s/[^:]*$/\/usr\/bin\/zsh/' -i /etc/passwd  
-git clone git@github.com:serojos2/zsh.git /opt/oh-my-zsh  
+git clone git@github.com:serojos/zsh.git /opt/oh-my-zsh  
 cp /opt/oh-my-zsh/.zshrc ~/.zshrc  
 nano ~/.rc  
 exec zsh 
