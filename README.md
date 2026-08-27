@@ -7,7 +7,6 @@ https://github.com/ohmyzsh/ohmyzsh.git
 https://github.com/zsh-users/zsh-syntax-highlighting.git  
 https://github.com/romkatv/powerlevel10k.git
 
-
 ## Установка
 ```
 apt install -y zsh  
@@ -17,6 +16,7 @@ cp /opt/oh-my-zsh/.zshrc ~/.zshrc
 nano ~/.rc  
 exec zsh 
 ```
+
 ### Файл .rc
 ```
 export PGHOME=/var/lib/postgresql
@@ -46,7 +46,9 @@ if nc -z -w1 192.168.50.8 2080 >/dev/null 2>&1; then
 fi
 ```
 
-## Initial Setup
+
+## Как это собрано
+```
 cd /usr/bin  
 git clone https://github.com/ohmyzsh/ohmyzsh.git /usr/bin/.oh-my-zsh  
 rm -rf /usr/bin/.oh-my-zsh/.git  
@@ -54,8 +56,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /usr/bin/.oh-my
 rm -rf /usr/bin/.oh-my-zsh/themes/powerlevel10k/.git  
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/bin/.oh-my-zsh/plugins/zsh-syntax-highlighting  
 rm -rf /usr/bin/.oh-my-zsh/plugins/zsh-syntax-highlighting/.git  
+```
 
 **Выбери настройки, а на вопрос сохранить ли конфигу в .zshrc ответь No**  
+```
 exec zsh  
 
 nano ~/.zshrc  
@@ -67,3 +71,4 @@ git remote add origin git@github.com:serojos2/zsh.git
 git add .  
 git commit -m "Init Commit"  
 git push origin HEAD  
+```
