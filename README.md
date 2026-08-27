@@ -17,7 +17,34 @@ cp /opt/oh-my-zsh/.zshrc ~/.zshrc
 nano ~/.rc  
 exec zsh 
 ```
+### Файл .rc
+```
+export PGHOME=/var/lib/postgresql
+source /opt/venv/bin/activate
 
+# https://unix.stackexchange.com/questions/153862/remove-all-files-directories-except-for-one-file
+# Включает поддержку команды rm -- ^file.txt , что удаляет всё кроме указанного файла
+setopt extendedglob
+
+alias chpg='chown -R postgres:postgres'
+alias clip='xclip -selection clipboard'
+alias pull='git pull origin main'
+alias push='git push origin HEAD'
+alias exp='/mnt/c/Windows/explorer.exe .'
+alias py='python3'
+alias rmz='rm *Zone.Identifier'
+alias vpn="source /opt/vpn"
+
+export C='/mnt/c'
+export PF='/mnt/c/Program Files'
+export D='/mnt/d'
+export F='/mnt/f'
+
+if nc -z -w1 192.168.50.8 2080 >/dev/null 2>&1; then
+  export http_proxy="http://192.168.50.8:2080"
+  export https_proxy="http://192.168.50.8:2080"
+fi
+```
 
 ## Initial Setup
 cd /usr/bin  
